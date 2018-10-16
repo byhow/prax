@@ -1,3 +1,16 @@
 {
-    "python.pythonPath": "/Users/Michael/anaconda3/bin/python"
+    "python.pythonPath": "/Users/Michael/anaconda3/bin/python",
+    "files.associations": {
+        "cstdio": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "cstddef": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "algorithm": "cpp"
+    }
 }
