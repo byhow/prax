@@ -5,6 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.acme.Solution",
+            "args": ""
+        },
+        {
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
@@ -13,9 +23,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true, // this sets vscode integrated console for debugging: false to use integrated
-            "MIMode": "lldb",
-            // "preLaunchTask": "build hello world"
+            "externalConsole": true,
+            "MIMode": "lldb"
         },
         {
             "name": "Python: Current File (Integrated Terminal)",
