@@ -1,6 +1,20 @@
-def prod(m, n):
-    if n < 1:
-        return 0
-    return m + prod(m, n - 1)
+filename = input()
+# filename = filename[8:]
 
-print(str(prod(10, 4)))
+with open(filename, 'r') as f:
+    content = f.readlines()
+
+contents = [ i.strip().split() for i in content]
+
+# print(contents)
+
+occur = dict()
+
+for i in contents:
+    if i[0] not in occur:
+        occur[i[0]] = 1
+    else:
+        occur[i[0]] += 1
+
+for k, v in occur.items():
+    print(k + " " + str(v))
