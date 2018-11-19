@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/Michael/anaconda3/bin/python",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.6/bin/python3",
     "files.associations": {
         "cstdio": "cpp",
         "__config": "cpp",
