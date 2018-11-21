@@ -13,6 +13,9 @@
         "typeinfo": "cpp",
         "algorithm": "cpp",
         "map": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "stack": "cpp",
+        "string": "cpp"
     }
 }

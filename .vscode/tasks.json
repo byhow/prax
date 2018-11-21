@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g", "./cpp/Main.cpp"
+                "-g", "./cpp/AddPareth.cpp"
             ],
             "group": {
                 "kind": "build",

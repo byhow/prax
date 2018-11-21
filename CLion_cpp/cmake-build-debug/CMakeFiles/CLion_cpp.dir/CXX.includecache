@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Michael/gitclone/ccp/CLion_cpp/main.cpp
+cctype
+-
+iomanip
+-
+iostream
+-
+sstream
+-
+string
+-
+vector
+-
+stack
+-
+
