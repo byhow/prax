@@ -17,12 +17,10 @@ string solution(string parentheses) {
         if (parentheses[i] == '(') 
         { 
             s.push(parentheses[i]); 
-            continue;
         } else {
             if (!s.empty()) {
                 tmp = s.top();
                 s.pop();
-                if (tmp != '(') left++;
             } else {
                 left++;
             }
@@ -34,6 +32,6 @@ string solution(string parentheses) {
 }
 
 int main(){
-    std::string ret = ")";
+    std::string ret = ")()()()))((";
     std::cout << solution(ret);
 }
