@@ -8,21 +8,16 @@ import sys
 
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
-    pairs = 0
-    pool = dict()
-
+    occ, occ_map = 0, dict()
     for i in ar:
-        pool[i] = 0
-    
-    for i in ar:
-        
-        pool[i] += 1
-        
-        if pool[i] % 2 == 0:
-            pairs += 1
+        if i in occ_map:
+            occ_map[i] += 1
+            if occ_map[i] % 2 == 0:
+                occ += 1
+        else:
+            occ_map[i] = 1
 
-            
-    return pairs
+    return occ
     
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
