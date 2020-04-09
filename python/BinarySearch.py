@@ -22,20 +22,6 @@ y = binarySearch(0, len(l_1) - 1, l_1, x)
 print(y)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # class TreeNode(object):
 #     def __init__(self, data):
 #         self.val = data
