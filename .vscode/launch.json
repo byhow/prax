@@ -1,6 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
+    {
+      "name": "Golang main",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${file}"
+    },
       {
         "name": "g++ build and debug active file",
         "type": "cppdbg",

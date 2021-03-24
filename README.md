@@ -1,1 +1,3 @@
-# coding challeges practices
+# Playground
+* algorithmic problems
+* testing code blocks
