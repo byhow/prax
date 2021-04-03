@@ -19,6 +19,10 @@
         "string": "cpp",
         "vector": "cpp",
         "unordered_map": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "regex": "cpp",
+        "string_view": "cpp"
     }
 }
