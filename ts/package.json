@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "lint": "tslint -p tsconfig.json"
+    "format": "prettier -w .",
+    "lint": "yarn build && eslint ."
   },
   "author": "",
   "license": "ISC",
