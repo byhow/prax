@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
         dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
@@ -8,12 +11,12 @@ class Solution:
         def dfs(i, j, m, n):
             if memo[i][j] > 0:
                 return memo[i][j]
-            localmax = 0
+            local_max = 0
             for k in dirs:
                 x, y = i + k[0], j + k[1]
                 if x >= 0 and y >= 0 and x < m and y < n and matrix[i][j] < matrix[x][y]:
-                    localmax = max(localmax, dfs(x, y, m, n))
-            memo[i][j] = localmax + 1
+                    local_max = max(local_max, dfs(x, y, m, n))
+            memo[i][j] = local_max + 1
 
             return memo[i][j]
 
