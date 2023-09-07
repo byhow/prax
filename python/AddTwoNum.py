@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+
 class Solution(object):
     def __init__(self):
         self.len = 0
@@ -19,8 +20,8 @@ class Solution(object):
         tmp = head
         p, q = l1, l2
         while p or q:
-            x = (p.val if p else 0)
-            y = (q.val if q else 0)
+            x = p.val if p else 0
+            y = q.val if q else 0
 
             val = x + y + (1 if self.carry else 0)
             if val >= 10:
@@ -31,19 +32,21 @@ class Solution(object):
 
             tmp.next = ListNode(val)
             # tmp.val = val
-            p = (p.next if p else None)
-            q = (q.next if q else None)
-            
+            p = p.next if p else None
+            q = q.next if q else None
+
             tmp = tmp.next
 
         if self.carry:
             tmp.next = ListNode(1)
         return head.next
-    
+
+
 def printLs(node):
     if node:
         print(str(node.val) + " -> ")
         printLs(node.next)
+
 
 node = ListNode(8)
 node.next = ListNode(10)

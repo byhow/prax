@@ -18,7 +18,7 @@
 #             occu[s[i]].append(i)
 #         else:
 #             occu[s[i]] = [i]
-   
+
 #     for i in queries:
 #         min_dist = len(s)
 #         found = True
@@ -35,14 +35,13 @@
 #                 ind_arr.append(i - min_dist)
 #             elif s[i + min_dist] == s[i]:
 #                 ind_arr.append(i + min_dist)
-        
-    
+
+
 #     print(occu)
 
 #     return ind_arr
 
 # print(closest("aaaa", [0, 1, 2, 3]))
-
 
 
 #
@@ -53,6 +52,7 @@
 #  1. STRING s
 #  2. INTEGER_ARRAY queries
 #
+
 
 def closest(s, queries):
     # Write your code here
@@ -76,7 +76,7 @@ def closest(s, queries):
                 found_max = True
                 break
             k += 1
-        
+
         k = j - 1
         while k >= min_ind:
             if s[k] == needle:
@@ -84,7 +84,7 @@ def closest(s, queries):
                 found_min = True
                 break
             k -= 1
-        
+
         if found_max and found_min:
             if abs(min_ind - j) > abs(max_ind - j):
                 ind_arr.append(max_ind)
@@ -99,5 +99,6 @@ def closest(s, queries):
                 ind_arr.append(-1)
 
     return ind_arr
+
 
 print(closest("aaaa", [0, 1, 2, 3]))

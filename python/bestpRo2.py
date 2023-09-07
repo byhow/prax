@@ -1,7 +1,6 @@
-import math
-
 def sortf(elem):
     return elem[2]
+
 
 def bestPros2(pros, k):
     # ret = []
@@ -19,7 +18,7 @@ def bestPros2(pros, k):
         pros[j].append(j)
 
     # print(pros)
-    
+
     ret1 = sorted(pros, key=sortf)
     ret = []
     for i in range(pro_length):
@@ -33,7 +32,7 @@ def bestPros2(pros, k):
     # print(ret)
     # min_set_index.add(index)
     # print(min_score)
-    
+
     # for i in range(k - 1):
     #     _min = math.inf
     #     for j in range(pro_length):
@@ -48,8 +47,4 @@ def bestPros2(pros, k):
     #     ret.append(index)
 
 
-print(bestPros2([[5,4], 
- [4,3], 
- [6,5], 
- [3,5]], 2))
-
+print(bestPros2([[5, 4], [4, 3], [6, 5], [3, 5]], 2))

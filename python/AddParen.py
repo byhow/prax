@@ -1,9 +1,8 @@
-
 def solution(parentheses):
-    # Type your solution here 
+    # Type your solution here
     count_left = 0
     stack = []
-    char = ''
+    char = ""
 
     for i in parentheses:
         if i == "(":
@@ -17,12 +16,11 @@ def solution(parentheses):
                     count_left += 1
             except:
                 count_left += 1
-            
-    
+
     count_right = len(stack)
     parentheses = "(" * count_left + parentheses + ")" * count_right
 
     return parentheses
 
 
-print(solution('('))
+print(solution("("))

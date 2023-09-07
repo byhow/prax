@@ -7,9 +7,10 @@ def binarySearch(l, r, arr, x):
         elif arr[mid] < x:
             l = mid + 1
         else:
-            r = mid - 1 
+            r = mid - 1
         # print(mid)
     return -1
+
 
 l_1 = list()
 for i in range(10):
@@ -27,7 +28,3 @@ print(y)
 #         self.val = data
 #         self.left = None
 #         self.right = None
-
-
-
-
