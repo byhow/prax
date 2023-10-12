@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "dev": "npx ts-node",
     "format": "prettier -w .",
     "lint": "yarn build && eslint ."
   },
@@ -20,6 +21,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
     "tslint-config-prettier": "^1.18.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
